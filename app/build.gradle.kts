@@ -47,7 +47,7 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.1.1"
+        kotlinCompilerExtensionVersion = composeVersion
     }
 
     packagingOptions {
@@ -65,9 +65,9 @@ dependencies {
 
     //compose
     implementation("androidx.activity:activity-compose:1.4.0") // Integration with activities
-    implementation("androidx.compose.material:material:1.1.1") // Compose Material Design
-    implementation("androidx.compose.animation:animation:1.1.1") // Animations
-    implementation("androidx.compose.ui:ui-tooling:1.1.1")// Tooling support (Previews, etc.)
+    implementation("androidx.compose.material:material:$composeVersion") // Compose Material Design
+    implementation("androidx.compose.animation:animation:$composeVersion") // Animations
+    implementation("androidx.compose.ui:ui-tooling:$composeVersion")// Tooling support (Previews, etc.)
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.4.1") // Integration with ViewModels
 
     //kotlin

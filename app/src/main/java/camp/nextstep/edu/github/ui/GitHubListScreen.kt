@@ -14,7 +14,7 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun GitHubListScreen(repositories: List<Pair<String, String>>) {
     LazyColumn {
-        item {
+        items(5000) {
             repositories.forEach { GitHubListItem(fullName = it.first, description = it.second) }
         }
     }
